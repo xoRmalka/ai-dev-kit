@@ -29,11 +29,11 @@ Run each check and report pass/fail:
 
 ## If all checks pass
 
-1. Stage and commit everything:
+1. If the git status check above shows a clean workspace (empty output), commit:
    ```bash
-   git add -A
-   git commit -m "feat: ship — task complete"
+   git commit --allow-empty -m "feat: ship — task complete"
    ```
+   If the workspace is dirty, stop here: "Uncommitted changes detected. Commit or stash your changes, then run `/ship` again."
 
 2. Print submission summary in this format:
 

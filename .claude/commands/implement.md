@@ -21,3 +21,7 @@ You are in the **IMPLEMENT** stage of the pipeline. Write code that matches the 
 ## If the design is unclear
 
 Ask for clarification before writing code. It is better to ask one question now than to build the wrong thing and rewrite it.
+
+## When done
+
+When implementation is complete, run `/review` to check your code against the proposal and design before shipping.
