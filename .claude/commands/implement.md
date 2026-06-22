@@ -22,6 +22,17 @@ You are in the **IMPLEMENT** stage of the pipeline. Write code that matches the 
 
 Ask for clarification before writing code. It is better to ask one question now than to build the wrong thing and rewrite it.
 
+## Looking up libraries and APIs
+
+Use **Context7** for any library, framework, SDK, or API lookups — even well-known ones (OpenAI SDK, Anthropic SDK, Express, Prisma, etc.). Your training data may not reflect recent changes. Do not guess at method signatures or config options.
+
+Use the `mcp__plugin_context7_context7__resolve-library-id` tool to find the library, then `mcp__plugin_context7_context7__query-docs` to fetch current docs.
+
+## Superpowers skills available during implementation
+
+- **`superpowers:test-driven-development`** — use this for every feature or fix. Write the failing test first.
+- **`superpowers:systematic-debugging`** — use this when you hit a bug or unexpected behavior. Do not guess at fixes.
+
 ## When done
 
 When implementation is complete, run `/review` to check your code against the proposal and design before shipping.

@@ -42,3 +42,18 @@ Use the slash commands in `.claude/commands/` to move through each stage.
 - `/shape`: No files written. No proposals. No code. Exploration only.
 - Before `/implement`: Check `.ai/design.md` exists and is non-empty. If not, refuse and direct to `/design`.
 - Each gate: Do not proceed without the user saying "approved", "looks good", "yes", or equivalent.
+
+## Available Tools
+
+### Context7
+Use Context7 for any library, framework, SDK, or API lookups during `/implement`. Never guess at method signatures or config options — fetch current docs instead.
+
+### Superpowers Skills
+Reach for these at the right moment — do not skip them:
+
+| Skill | When to use |
+|-------|------------|
+| `superpowers:test-driven-development` | During `/implement` — write failing test before every feature |
+| `superpowers:systematic-debugging` | During `/implement` — any bug or unexpected behavior |
+| `superpowers:code-review` | During `/review` — deep code quality check |
+| `superpowers:brainstorming` | During `/shape` — if the task is complex and needs structured exploration |
